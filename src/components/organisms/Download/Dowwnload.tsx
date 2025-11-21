@@ -1,6 +1,6 @@
 function Download() {
     return (
-        <div>Donwload placeholder</div>
+        <div>Download placeholder</div>
     )
     
 }
