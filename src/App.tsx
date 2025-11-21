@@ -3,6 +3,7 @@ import Faq from './components/organisms/FAQs/FAQs';
 import Features from './components/organisms/Features/Features';
 import Header  from './components/organisms/Header/Header';
 import Hero from './components/organisms/Hero/Hero';
+import Subscribe from './components/organisms/Subscribe/Subscribe';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
      <Features />
      <Download />
      <Faq />
+     <Subscribe />
     </>
   )
 }
