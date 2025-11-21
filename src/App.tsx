@@ -1,12 +1,12 @@
+import Header  from './components/organisms/Header/Header';
 
-import './App.css'
 
 function App() {
  
 
   return (
     <>
-     
+     <Header />
     </>
   )
 }
