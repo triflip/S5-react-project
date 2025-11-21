@@ -1,5 +1,5 @@
 function Header() {
-    return <div>React</div>
+    return <div>Header</div>
 }
 
 export default Header;
