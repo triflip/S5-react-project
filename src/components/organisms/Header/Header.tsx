@@ -1,6 +1,15 @@
+import LogoMobile from "../../atoms/LogoMobile";
+
+
 function Header() {
-    return <div>Header</div>
+    return (
+        <header>
+            <LogoMobile/>
+        </header>
+    )
 }
 
 export default Header;
+
+
 
