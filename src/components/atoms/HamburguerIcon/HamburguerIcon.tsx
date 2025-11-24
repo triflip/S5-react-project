@@ -1,12 +1,12 @@
 import styles from "./HamburguerIcon.module.css";
-import hamburguerIcon from "../../assets/img/icon-hamburger.svg";
+import hamburguerIcon from "../../../assets/img/icon-hamburger.svg";
 
 function HamburguerIcon() {
     return (
         <button className={styles.button} aria-label="Opern menu">
             <img 
                 src={hamburguerIcon}
-                alt="Hambuguer icon"
+                alt="Hamburger icon"
                 aria-hidden="true"
             />
         </button>

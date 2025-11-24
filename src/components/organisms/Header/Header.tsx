@@ -1,12 +1,19 @@
-import HamburguerIcon from "../../atoms/HamburguerIcon";
+import HamburguerIcon from "../../atoms/HamburguerIcon/HamburguerIcon";
 import LogoMobile from "../../atoms/LogoMobile";
+import MobileMenu from "../../molecules/MobileMenu/MobileMenu";
+import React from "react";
 
 
 function Header() {
+    const [menuOpen, setMenuOpen] = React.useState(false);
+
     return (
         <header>
             <LogoMobile/>
-            <HamburguerIcon/>
+            <button type="button" onClick={() => setMenuOpen(true)} aria-label="Open menu" className="hamburger-button">
+                <HamburguerIcon />
+            </button>
+            {menuOpen && <MobileMenu onClose={() => setMenuOpen(false)} />}
         </header>
     )
 }
