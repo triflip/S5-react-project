@@ -1,6 +1,6 @@
 import React from "react";
-import LogoMobile from "../../atoms/LogoMobile";
-import HamburguerIcon from "../../atoms/HamburguerIcon/HamburguerIcon";
+import LogoMobile from "../../atoms/Logo/LogoMobile";
+import CloseIcon from "../../atoms/CloseIcon/CloseIcon";
 import styles from "./MobileMenu.module.css";
 
 interface MobileMenuProps {
@@ -12,8 +12,13 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ onClose }) => {
         <div className={styles.overlay}>
             <div className={styles.header}>
                 <LogoMobile />
-                <button className={styles.closeButton} onClick={onClose} aria-label="Close menu">
-                    <HamburguerIcon />
+
+                <button 
+                    className={styles.closeButton} 
+                    onClick={onClose} 
+                    aria-label="Close menu"
+                >
+                    <CloseIcon size={24} />
                 </button>
 
                 <nav className={styles.nav}>

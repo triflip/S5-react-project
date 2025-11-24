@@ -1,5 +1,6 @@
+import logoMobile from "../../../assets/img/logo-bookmark.svg";
 import styles from "./LogoMobile.module.css";
-import logoMobile from "../../assets/img/logo-bookmark.svg";
+
 
 function LogoMobile() {
     return (
