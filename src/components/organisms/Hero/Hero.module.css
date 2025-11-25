@@ -34,8 +34,27 @@
     color: hsl(229, 31%, 21%);
 }
 
+.imageWrapper {
+    position: relative;   
+}
+
 .imageWrapper img {
     width: 100%;
     max-width: 400px;
     margin: 0 auto;
+}
+
+.backgroundShape {
+  display: flex;
+  position: absolute;
+  top: 43%;
+  left: 20%;
+  aspect-ratio: 2 / 1;
+  width: 80%;
+  max-height: 40vh;
+  height: auto;
+  z-index: -1;
+  background-color: hsl(231, 69%, 60%);
+  border-top-left-radius: 200px;
+  border-bottom-left-radius: 200px;
 }

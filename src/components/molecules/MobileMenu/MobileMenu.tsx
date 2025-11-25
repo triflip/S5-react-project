@@ -2,7 +2,7 @@ import React from "react";
 import LogoMobile from "../../atoms/Logo/LogoMobile";
 import CloseIcon from "../../atoms/CloseIcon/CloseIcon";
 import styles from "./MobileMenu.module.css";
-import LoginButton from "../../atoms/LoginButton/LoginButton";
+import Button from "../../atoms/Button/Button";
 
 interface MobileMenuProps {
     onClose: () => void;
@@ -28,7 +28,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ onClose }) => {
                     <a href="#contact" className={styles.link}>Contact</a>
                 </nav>
                 
-                <LoginButton/>
+                <Button>Login</Button>
             </div>
         </div>
     );

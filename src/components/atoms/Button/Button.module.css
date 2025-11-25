@@ -1,0 +1,44 @@
+.button {
+    padding: 0.7rem 1.6rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.red {
+    background-color: hsl(0, 94%, 66%);
+    color: white;
+    border-color: hsl(0, 94%, 66%);
+}
+
+.red:hover {
+    background-color: white;
+    color: hsl(0, 94%, 66%);
+}
+
+.blue {
+    background-color: hsl(225, 73%, 57%); /* exemple blau */
+    color: white;
+    border-color: hsl(225, 73%, 57%);
+}
+
+.blue:hover {
+    background-color: white;
+    color: hsl(0, 0%, 20%); 
+    border-color: hsl(225, 73%, 57%);
+}
+
+.white {
+    background-color:white;
+    color: hsl(0, 0%, 20%);
+   
+
+}
+
+.white:hover {
+    background-color:hsl(225, 73%, 57%);
+    color:white;
+}

@@ -1,6 +1,7 @@
 
 import styles from "./Hero.module.css";
 import HeroImage from "../../../assets/img/illustration-hero.svg";
+import Button from "../../atoms/Button/Button"
 
 function Hero() {
     return (
@@ -14,13 +15,20 @@ function Hero() {
                 </p>
 
                 <div className={styles.buttons}>
-                    <button className={styles.btnPrimary}>Get it on Chrome</button>
-                    <button className={styles.btnSecondary}>Get it on Firefox</button>
-                </div>
+                    <Button variant="blue">Get it on Firefox</Button>   
+                    <Button variant="white">Get it on Chrome</Button>           
+</div>
+
             </div>
 
             <div className={styles.imageWrapper}>
-                <img src={HeroImage} alt="Hero illustration" />
+                <img 
+                src={HeroImage} 
+                alt="Hero illustration" 
+                />
+
+            <div className={styles.backgroundShape}></div>
+
             </div>
         </section>
     );
