@@ -1,0 +1,19 @@
+
+.tabButton {
+  background: none;
+  border: none;
+  padding: 1rem;
+  width: 100%;
+  font-size: 1rem;
+  color: hsl(229, 8%, 50%);
+  border-bottom: 1px solid hsl(229, 8%, 80%);
+  cursor: pointer;
+}
+
+.tabButton.active {
+  color: hsl(0, 100%, 59%);
+  border-bottom: 3px solid hsl(231, 69%, 60%);
+}
+.tabButton:hover {
+  color: hsl(0, 100%, 59%);
+}
