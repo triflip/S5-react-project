@@ -21,7 +21,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ onClose }) => {
                 >
                     <CloseIcon size={24} />
                 </button>
-
+                
                 <nav className={styles.nav}>
                     <a href="#features" className={styles.link}>Features</a>
                     <a href="#download" className={styles.link}>Download</a>
