@@ -1,0 +1,22 @@
+.section {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.textBlock {
+  max-width: 500px;
+  margin: 0 auto 3rem;
+}
+
+.textBlock p {
+  color: hsl(229, 8%, 50%);
+  margin-top: 1rem;
+}
+
+/* Cards layout — Mobile First */
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
