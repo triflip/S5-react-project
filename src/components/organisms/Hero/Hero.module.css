@@ -30,13 +30,13 @@
 
 .backgroundShape {
   position: absolute;
-  top: 40%;
-  left: 80%;
+  top: 20%;
+  left: 70%;
   transform: translateX(-50%);
-  width: 80%;
+  width: 90%;
   height: 70vh;
   min-height: 100px;
-  max-height: 200px;
+  max-height: 250px;
   z-index: -1;
   background-color: hsl(231, 69%, 60%);
   border-top-left-radius: 200px;
