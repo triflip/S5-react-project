@@ -4,7 +4,7 @@ import ChromeLogo from "../../../assets/img/logo-chrome.svg";
 import FirefoxLogo from "../../../assets/img/logo-firefox.svg";
 import OperaLogo from "../../../assets/img/logo-opera.svg";
 
-import styles from "./Dowwnload.module.css";
+import styles from "./Download.module.css";
 
 export default function ExtensionSection() {
   return (

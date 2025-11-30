@@ -22,7 +22,6 @@ export default function FeatureTab({ image, title, text }: FeatureTabProps) {
         <h2>{title}</h2>
         <p>{text}</p>
 
-        <Button variant="blue">More info</Button>
       </article>
     </div>
   );

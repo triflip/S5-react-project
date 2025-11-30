@@ -13,7 +13,6 @@
   margin-top: 1rem;
 }
 
-/* Cards layout — Mobile First */
 .cards {
   display: flex;
   flex-direction: column;

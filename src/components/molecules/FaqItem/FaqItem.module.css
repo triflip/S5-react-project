@@ -1,0 +1,12 @@
+.faqItem summary {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 1rem 0;
+}
+
+.faqItem p {
+  margin-top: 0.5rem;
+  color: hsl(229, 8%, 50%);
+  padding-left: 1rem;
+}

@@ -1,4 +1,4 @@
-import Download from './components/organisms/Download/Dowwnload';
+import Download from './components/organisms/Download/Download';
 import Faq from './components/organisms/FAQs/FAQs';
 import Features from './components/organisms/Features/Features';
 import Footer from './components/organisms/Footer/Footer';
