@@ -1,0 +1,14 @@
+.icon {
+  display: inline-block;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.icon img {
+  width: 24px;
+  height: 24px;
+}
