@@ -3,13 +3,16 @@ interface InputEmailProps {
     onChange: (value: string) => void;
     error?: boolean;
     placeholder: string;
+    required?: boolean; 
+    className?: string;
 }
 
-export default function ImputEmail({
+export default function InputEmail({
     value,
     onChange,
     error = false,
     placeholder = "Enter your mail address",
+    required = false,
 }: InputEmailProps) {
     return (
         <input
@@ -19,6 +22,7 @@ export default function ImputEmail({
         onChange={(e) => onChange(e.target.value)}
         placeholder= {placeholder}
         aria-invalid={error}
+        required={required}
         />
     );
 }
