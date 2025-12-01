@@ -4,4 +4,47 @@
     align-items: center;
     padding: 1.5rem;
 }
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+
+.desktopNav {
+  display: none;
+}
+
+.hamburgerButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .desktopNav {
+    display: flex;        
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .hamburgerButton {
+    display: none;        
+  }
+}
+
+@media (min-width: 1024px) {
+  .header {
+    padding: 2rem 4rem;     
+  }
+
+  .desktopNav {
+    gap: 3rem;              
+  }
+}
+
+
+
+
 
