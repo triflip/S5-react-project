@@ -9,8 +9,9 @@
 }
 
 .textBlock p {
-  color: hsl(229, 8%, 50%);
+  color: var(--color-text);
   margin-top: 1rem;
+  font-size: var(--p-size);
 }
 
 .cards {

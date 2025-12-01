@@ -12,10 +12,14 @@ export default function FaqItem({ question, answer, defaultOpen = false }: FaqIt
   const [isOpen, setIsOpen] = useState(defaultOpen);
 
   return (
-    <details className={styles.faqItem} open={isOpen} onClick={() => setIsOpen(!isOpen)}>
+    <details
+      className={styles.faqItem}
+      open={isOpen}
+      onToggle={(e) => setIsOpen((e.target as HTMLDetailsElement).open)}
+    >
       <summary>
         {question}
-        <ArrowIcon open={!isOpen} />
+        <ArrowIcon open={isOpen} />
       </summary>
       <p>{answer}</p>
     </details>

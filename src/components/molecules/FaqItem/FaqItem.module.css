@@ -3,10 +3,14 @@
   justify-content: space-between;
   cursor: pointer;
   padding: 1rem 0;
+  font-size: var(--p-size);
 }
 
 .faqItem p {
-  margin-top: 0.5rem;
-  color: hsl(229, 8%, 50%);
-  padding-left: 1rem;
+  margin: 0;
+  padding: 0.5rem 0 1rem;
+  color: var(--color-paragraph);
+  font-size: var(--p-size);
 }
+
+

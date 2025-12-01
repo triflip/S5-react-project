@@ -14,23 +14,27 @@ function Footer() {
 
       <nav className={styles.navFooter}>
         <ul>
-          <a href="#features" className={styles.link}>Features</a>
-          <a href="#download" className={styles.link}>Download</a>
-          <a href="#contact" className={styles.link}>Contact</a>
+          <li>
+            <a href="#features" className={styles.link}>
+              Features
+            </a>
+          </li>
+          <li>
+            <a href="#download" className={styles.link}>
+              Download
+            </a>
+          </li>
+          <li>
+            <a href="#contact" className={styles.link}>
+              Contact
+            </a>
+          </li>
         </ul>
       </nav>
 
       <div className={styles.social}>
-        <SocialIcon
-          href="#"
-          src={facebookIcon}
-          alt="Follow us on Facebook"
-        />
-        <SocialIcon
-          href="#"
-          src={twitterIcon}
-          alt="Follow us on Twitter"
-        />
+        <SocialIcon href="#" src={facebookIcon} alt="Follow us on Facebook" />
+        <SocialIcon href="#" src={twitterIcon} alt="Follow us on Twitter" />
       </div>
     </footer>
   );

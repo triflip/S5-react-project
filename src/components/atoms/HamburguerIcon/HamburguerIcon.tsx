@@ -3,7 +3,7 @@ import hamburguerIcon from "../../../assets/img/icon-hamburger.svg";
 
 function HamburguerIcon() {
     return (
-        <button className={styles.button} aria-label="Opern menu">
+        <button className={styles.button} aria-label="Open menu">
             <img 
                 src={hamburguerIcon}
                 alt="Hamburger icon"

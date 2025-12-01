@@ -1,8 +1,13 @@
 import React from "react";
-import LogoMobile from "../../atoms/Logo/LogoMobile";
+
 import CloseIcon from "../../atoms/CloseIcon/CloseIcon";
 import styles from "./MobileMenu.module.css";
 import Button from "../../atoms/Button/Button";
+import SocialIcon from "../../atoms/SocialIcon/SocialIcons";
+import footerLogo from "./../../../assets/img/logo-bookmark-footer.svg";
+import facebookIcon from "./../../../assets/img/icon-facebook.svg";
+import twitterIcon from "./../../../assets/img/icon-twitter.svg";
+
 
 interface MobileMenuProps {
     onClose: () => void;
@@ -10,27 +15,36 @@ interface MobileMenuProps {
 
 const MobileMenu: React.FC<MobileMenuProps> = ({ onClose }) => {
     return (
-        <div className={styles.overlay}>
-            <div className={styles.header}>
-                <LogoMobile />
+       <div className={styles.overlay}>
+  <div className={styles.header}>
+    <div className={styles.headerTop}>
+      <div className={styles.logo}>
+        <img src={footerLogo} alt="Bookmark logo" />
+      </div>
 
-                <button 
-                    className={styles.closeButton} 
-                    onClick={onClose} 
-                    aria-label="Close menu"
-                >
-                    <CloseIcon size={24} />
-                </button>
-                
-                <nav className={styles.nav}>
-                    <a href="#features" className={styles.link}>Features</a>
-                    <a href="#download" className={styles.link}>Download</a>
-                    <a href="#contact" className={styles.link}>Contact</a>
-                </nav>
-                
-                <Button>Login</Button>
-            </div>
-        </div>
+      <button 
+        className={styles.closeButton} 
+        onClick={onClose} 
+        aria-label="Close menu"
+      >
+        <CloseIcon size={24} />
+      </button>
+    </div>
+
+    <nav className={styles.nav}>
+      <a href="#features" className={styles.link}>Features</a>
+      <a href="#download" className={styles.link}>Download</a>
+      <a href="#contact" className={styles.link}>Contact</a>
+    </nav>
+
+    <Button variant="transparent">Login</Button>
+
+    <div className={styles.social}>
+      <SocialIcon href="#" src={facebookIcon} alt="Follow us on Facebook" />
+      <SocialIcon href="#" src={twitterIcon} alt="Follow us on Twitter" />
+    </div>
+  </div>
+</div>
     );
 };
 

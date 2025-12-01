@@ -9,38 +9,46 @@
 }
 
 .red {
-    background-color: hsl(0, 94%, 66%);
-    color: white;
-    border-color: hsl(0, 94%, 66%);
+    background-color:var(--color-secondary);
+    color: var(--color-light);
+    border-color: var(--color-secondary);
 }
 
 .red:hover {
-    background-color: white;
-    color: hsl(0, 94%, 66%);
+    background-color: var(--color-light);
+    color: var(--color-secondary);
 }
 
 .blue {
-    background-color: hsl(225, 73%, 57%); /* exemple blau */
-    color: white;
-    border-color: hsl(225, 73%, 57%);
+    background-color: var(--color-primary);
+    color: var(--color-light);
+    border-color: var(--color-primary);
 }
 
 .blue:hover {
-    background-color: white;
-    color: hsl(0, 0%, 20%); 
-    border-color: hsl(225, 73%, 57%);
+    background-color: var(--color-light);
+    color: var(--color-text); 
+    border-color: var(--color-primary);
 }
 
 .white {
-    background-color:white;
-    color: hsl(0, 0%, 20%);
-    box-shadow:  3px 3px rgba(0, 0, 0, 0.05);
-    
-   
-
+    background-color: var(--color-light);
+    color: var(--color-text);
+    box-shadow: var(--box-shadow);
 }
 
 .white:hover {
-    background-color:hsl(225, 73%, 57%);
-    color:white;
+    background-color:var(--color-primary);
+    color:var(--color-light);
+}
+
+.transparent {
+  background: transparent;
+  border: 1px solid var(--color-light); 
+  color: var(--color-light);
+}
+
+.transparent:hover {
+  color: var(--color-secondary);
+  border-color: var(--color-secondary);
 }

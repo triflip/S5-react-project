@@ -1,9 +1,9 @@
 .card {
-  background: white;
+  background: var(--color-light);
   border-radius: 1rem;
   padding: 2rem 1.5rem;
   text-align: center;
-  box-shadow: 0px 10px 25px rgba(0,0,0,0.08);
+  box-shadow: var(--box-shadow);
 
   display: flex;
   flex-direction: column;
@@ -21,7 +21,7 @@
 
 .card p {
   margin: 0;
-  color: hsl(229, 8%, 50%);
+  color: var(--color-tab);
 }
 
 .card button {

@@ -1,7 +1,12 @@
 .footer {
-  background-color: hsl(233, 26%, 24%);
-  color: white;
+  background-color: var(--color-footer-bg);
+  color: var(--color-light);
   padding: 4rem 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  justify-content: space-between;
 }
 .nav-footer ul {
   display: flex;
@@ -15,27 +20,35 @@
 
 .navFooter a {
   text-decoration: none;
-  color: var(--white);
+  color: var(--color-light);
   font-weight: 500;
   transition: opacity 0.3s ease;
+  font-size: var(--link-size);
 }
 
 .link {
     display: flex;
     flex-direction: column;
-    color: white;
+    color: var(--color-light);
     text-decoration: none;
     font-size: 1rem;
-    font-weight: 500;;
+    font-weight: 500;
+    margin-bottom: 1rem;
 }
 
 .navFooter a:hover {
   opacity: 0.7;
+  color: var(--color-secondary);
 }
 
-.especialLogo {
+.social {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-bottom: 2rem;
+  gap: 1.5rem;
+  margin-top: 5em;
+}
+
+.social a:hover img {
+  filter: var(--social-hover-filter);
+  opacity: 0.7;
 }

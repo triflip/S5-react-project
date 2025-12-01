@@ -1,39 +1,65 @@
 .overlay {
-    position: fixed;      /* FONAMENTAL per tapar tota la pantalla */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: hsla(229, 31%, 21%, 0.95);
-    z-index: 999;         /* FONAMENTAL per quedar per sobre del Hero */
+  position: fixed;
+  inset: 0;
+  background: var(--color-overlay-bg);
+  z-index: 999;
 }
 
 .header {
-    position: relative;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  z-index: 1000;
+}
+
+.headerTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.logo img {
+  height: 32px;
 }
 
 .closeButton {
-    align-self: flex-end;
-    background: none;
-    border: none;
-    cursor: pointer;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 .nav {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .link {
-    color: white;
-    text-decoration: none;
-    font-size: 1.4rem;
-    font-weight: 500;
+  color: var(--color-light);
+  text-decoration: none;
+  font-size: var(--link-size);
+  border-bottom: 1px solid var(--color-tab);
+  padding: 1rem 0;
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
 
+.link:hover {
+  color: var(--color-secondary);
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 5em;
+}
+
+.social a:hover img {
+  filter: var(--social-hover-filter);
+  opacity: 0.7;
+}

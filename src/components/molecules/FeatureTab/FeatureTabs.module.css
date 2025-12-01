@@ -38,7 +38,7 @@
   height: 80%;             
   min-height: 100px;
   max-height: 250px;
-  background-color: hsl(231, 69%, 60%);
+  background-color: var(--color-primary);
   border-bottom-right-radius: 200px;
   border-top-right-radius: 200px;
   z-index: 1;
