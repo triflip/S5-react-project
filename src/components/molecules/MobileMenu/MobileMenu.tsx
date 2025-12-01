@@ -37,7 +37,10 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ onClose }) => {
       <a href="#contact" className={styles.link}>Contact</a>
     </nav>
 
-    <Button variant="transparent">Login</Button>
+       <Button variant="transparent" className={styles.loginTransparent}>
+        Login
+      </Button>
+
 
     <div className={styles.social}>
       <SocialIcon href="#" src={facebookIcon} alt="Follow us on Facebook" />

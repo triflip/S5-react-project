@@ -1,0 +1,49 @@
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+   justify-content: flex-end;
+  gap: clamp(0.75rem, 2vw, 2rem);
+}
+
+.link {
+  text-decoration: none;
+  color: var(--color-dark);
+  font-weight: 500;
+  flex-shrink: 1;
+  min-width: 0;
+   font-size: clamp(0.9rem, 1.5vw, var(--p-size));
+}
+
+.link:hover {
+  color: var(--color-secondary);
+}
+
+.loginTransparent {
+  display: inline-block;
+}
+
+.loginSecondary {
+  display: none; 
+}
+
+@media (min-width: 768px) {
+  .nav {
+    flex-direction: row; 
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .link {
+    font-size: var(--p-size);
+  }
+  
+  .loginTransparent {
+    display: none; /* Amaga el transparent */
+  }
+  
+  .loginSecondary {
+    display: inline-block; /* Mostra el vermell */
+  }
+}

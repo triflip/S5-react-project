@@ -8,7 +8,7 @@ import styles from "./Download.module.css";
 
 export default function ExtensionSection() {
   return (
-    <section id="download-section" className={styles.section}>
+    <section id="download" className={styles.section}>
       <article className={styles.textBlock}>
         <h2>Download the extension</h2>
         <p>

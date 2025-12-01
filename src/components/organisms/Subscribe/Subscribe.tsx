@@ -27,7 +27,7 @@ export default function Subscribe() {
         <p>35.000+ ALREADY JOINED</p>
         <h2>Stay up-to-date with what we're doing</h2>
 
-        <form className={styles.contactForm} onSubmit={handleSubmit} noValidate>
+        <form id="contact" className={styles.contactForm} onSubmit={handleSubmit} noValidate>
           <div className={styles.inputWrapper}>
             <Input
               value={email}
