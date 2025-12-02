@@ -15,9 +15,9 @@
   --font-size-base: 16px;
 
   
-  --h2-size: 2.50rem;
-  --h3-size: 2.00rem;
-  --p-size: 1.75rem;
+  --h2-size: 3.25rem;
+  --h3-size: 2.60rem;
+  --p-size: 1.85rem;
   --link-size: 1.4rem;
 
   --responsive-h-size: clamp(2rem, 2.5vw, 3rem);

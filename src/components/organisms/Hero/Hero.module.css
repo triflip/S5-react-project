@@ -2,15 +2,9 @@
   padding: 3rem 1.5rem;
   text-align: center;
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   align-items: center;
-}
-
-.textSection {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 500px;
-  margin: 0 auto 3rem;
+  gap: 2rem;
 }
 
 .textSection {
@@ -42,11 +36,11 @@
 
 .imageWrapper {
   position: relative;
+  max-width: auto;
 }
 
 .imageWrapper img {
   width: 100%;
-  max-width: 400px;
   margin: 0 auto;
 }
 
@@ -70,7 +64,6 @@
     flex-direction: row;
     text-align: left;
     justify-content: space-around;
-    gap: 3rem;
   }
 
   .textContent {
@@ -79,7 +72,7 @@
   }
 
     h2 {
-      width: 70%;
+      width: 80%;
     }
 
     .buttons {
@@ -94,11 +87,11 @@
 
 .backgroundShape {
   top: 30%;
-  left: 85%;
   width: 100%;
-  height: 35vh;
-  max-height: 400px;
+  min-height: 100px;
+  max-height: 320px;
 }
+
 
 
 }
