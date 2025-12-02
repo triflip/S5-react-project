@@ -32,7 +32,7 @@
 }
 
 .white {
-    background-color: var(--color-light);
+    background-color: var(--color-btn-white);
     color: var(--color-text);
     box-shadow: var(--box-shadow);
 }

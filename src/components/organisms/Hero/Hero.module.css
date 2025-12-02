@@ -1,28 +1,53 @@
 .hero {
-      padding: 3rem 1.5rem;
+  padding: 3rem 1.5rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.textContent {
-     max-width: 500px;
+.textSection {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 500px;
   margin: 0 auto 3rem;
 }
 
+.textSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.textSection h2 {
+  font-size: var(--responsive-h-size);
+  font-weight: 700;
+  text-align: center;
+}
+
+.textSection p {
+  font-size: var(--responsive-p-size);
+  line-height: 1.5;
+  max-width: 45ch; 
+  text-align: center;
+  flex-wrap: wrap;
+}
+
 .buttons {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1.5rem;
 }
 
 .imageWrapper {
-    position: relative;
+  position: relative;
 }
 
 .imageWrapper img {
-    width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 .backgroundShape {
@@ -38,4 +63,71 @@
   background-color: var(--color-primary);
   border-top-left-radius: 200px;
   border-bottom-left-radius: 200px;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    padding: 3rem 3rem;
+  }
+
+  .hero h2 {
+    font-size: calc(var(--h2-size) + 0.5rem);
+  }
+
+  .hero p {
+    max-width: 450px;
+    margin: 0 auto 2rem auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero {
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-between;
+    padding: 5rem 8rem;
+  }
+
+  .textSection {
+    max-width: 500px;
+    align-items: flex-start;
+  }
+  
+  .textSection h2 {
+    font-size: var(--h2-size);
+    font-weight: 700;
+    text-align: start;
+  }
+  
+  .textSection p {
+    font-size: var(--p-size);
+    text-align: start;
+    margin-left: 0;
+  }
+
+  .buttons {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .imageWrapper {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .imageWrapper img {
+  width: 100%;
+  max-width: 600px;
+}
+
+.backgroundShape {
+  top: 30%;
+  left: 85%;
+  width: 100%;
+  height: 35vh;
+  max-height: 400px;
+}
+
+
 }
