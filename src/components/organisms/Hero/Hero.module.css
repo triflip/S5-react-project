@@ -27,7 +27,7 @@
 .backgroundShape {
   position: absolute;
   top: 30%;
-  left: 70%;
+  left: 80%;
   transform: translateX(-50%);
   width: 90%;
   height: 100vh;
@@ -44,7 +44,6 @@
     flex-direction: row;
     text-align: left;
     justify-content: space-around;
-    gap: 3rem;
   }
 
   .textContent {
@@ -53,7 +52,7 @@
   }
 
     h2 {
-      width: 70%;
+      width: 80%;
     }
 
     .buttons {
