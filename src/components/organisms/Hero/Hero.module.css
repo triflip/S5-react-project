@@ -7,6 +7,26 @@
   gap: 2rem;
 }
 
+.textSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.textSection h2 {
+  font-size: var(--responsive-h-size);
+  font-weight: 700;
+  text-align: center;
+}
+
+.textSection p {
+  font-size: var(--responsive-p-size);
+  line-height: 1.5;
+  max-width: 45ch; 
+  text-align: center;
+  flex-wrap: wrap;
+}
+
 .buttons {
   display: flex;
   gap: 1rem;
