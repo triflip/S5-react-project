@@ -1,24 +1,22 @@
 :root {
   --color-primary: hsl(231, 69%, 60%);
   --color-secondary: hsl(0, 94%, 66%);
-  --color-text: hsl(229, 13%, 32%);
+  --color-text: hsl(225, 3%, 26%);
   --color-light: hsl(0, 0%, 100%);
   --color-tab: hsl(229, 8%, 50%);
   --color-footer-bg: rgb(41, 40, 72);
   --color-paragraph: hsl(240, 1%, 47%);
   --color-overlay-bg: hsla(231, 35%, 15%, 0.95);
-  --social-hover-filter: invert(48%) sepia(83%) saturate(747%)
-    hue-rotate(329deg) brightness(91%) contrast(90%);
-  --color-btn-white: hsl(240, 18%, 90%);
-
+  --social-hover-filter:brightness(0) saturate(100%) invert(78%) sepia(52%) saturate(7469%) hue-rotate(326deg) brightness(113%) contrast(123%);
 
   --box-shadow: 0 4px 12px rgba(2, 2, 2, 0.1);
 
   --font-base: ;
   --font-size-base: 16px;
 
-  --h2-size: 2.9rem;
-  --h3-size: 2.3rem;
+  
+  --h2-size: 2.50rem;
+  --h3-size: 2.00rem;
   --p-size: 1.75rem;
   --link-size: 1.4rem;
 
