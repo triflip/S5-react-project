@@ -52,73 +52,44 @@
 
 .backgroundShape {
   position: absolute;
-  top: 20%;
-  left: 70%;
+  top: 30%;
+  left: 80%;
   transform: translateX(-50%);
   width: 90%;
-  height: 70vh;
-  min-height: 100px;
-  max-height: 250px;
+  height: 100vh;
+  min-height: 80px;
+  max-height: 180px;
   z-index: -1;
   background-color: var(--color-primary);
   border-top-left-radius: 200px;
   border-bottom-left-radius: 200px;
 }
 
-@media (min-width: 768px) {
-  .hero {
-    padding: 3rem 3rem;
-  }
-
-  .hero h2 {
-    font-size: calc(var(--h2-size) + 0.5rem);
-  }
-
-  .hero p {
-    max-width: 450px;
-    margin: 0 auto 2rem auto;
-  }
-}
-
 @media (min-width: 1200px) {
   .hero {
     flex-direction: row;
     text-align: left;
-    justify-content: space-between;
-    padding: 5rem 8rem;
+    justify-content: space-around;
+    gap: 3rem;
   }
 
-  .textSection {
-    max-width: 500px;
-    align-items: flex-start;
-  }
-  
-  .textSection h2 {
-    font-size: var(--h2-size);
-    font-weight: 700;
-    text-align: start;
-  }
-  
-  .textSection p {
-    font-size: var(--p-size);
-    text-align: start;
-    margin-left: 0;
+  .textContent {
+    max-width: 600px;
+    margin-left: 3rem;
   }
 
-  .buttons {
-    justify-content: center;
-    align-items: center;
-  }
+    h2 {
+      width: 70%;
+    }
 
-  .imageWrapper {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-  }
+    .buttons {
+      justify-content: flex-start;
+    }
 
-  .imageWrapper img {
+    .imageWrapper img {
   width: 100%;
-  max-width: 600px;
+  max-width: auto;
+  
 }
 
 .backgroundShape {
