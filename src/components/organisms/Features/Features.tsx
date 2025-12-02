@@ -41,7 +41,7 @@ export default function Features() {
     <section id="features" aria-label="Features section" className={styles.features}>
       
       <article className={styles.headerText}>
-        <h2>Features</h2>
+        <h3>Features</h3>
         <p>
           Our aim is to make it quick and easy for you to access your favourite websites. Open a new browser
           tab and see your sites load instantly.
