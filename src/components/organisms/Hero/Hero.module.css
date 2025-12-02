@@ -2,9 +2,15 @@
   padding: 3rem 1.5rem;
   text-align: center;
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   align-items: center;
-  gap: 2rem;
+}
+
+.textSection {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 500px;
+  margin: 0 auto 3rem;
 }
 
 .textSection {
@@ -36,62 +42,92 @@
 
 .imageWrapper {
   position: relative;
-  max-width: auto;
 }
 
 .imageWrapper img {
   width: 100%;
+  max-width: 400px;
   margin: 0 auto;
 }
 
 .backgroundShape {
   position: absolute;
-  top: 30%;
-  left: 80%;
+  top: 20%;
+  left: 70%;
   transform: translateX(-50%);
   width: 90%;
-  height: 100vh;
-  min-height: 80px;
-  max-height: 180px;
+  height: 70vh;
+  min-height: 100px;
+  max-height: 250px;
   z-index: -1;
   background-color: var(--color-primary);
   border-top-left-radius: 200px;
   border-bottom-left-radius: 200px;
 }
 
+@media (min-width: 768px) {
+  .hero {
+    padding: 3rem 3rem;
+  }
+
+  .hero h2 {
+    font-size: calc(var(--h2-size) + 0.5rem);
+  }
+
+  .hero p {
+    max-width: 450px;
+    margin: 0 auto 2rem auto;
+  }
+}
+
 @media (min-width: 1200px) {
   .hero {
     flex-direction: row;
     text-align: left;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 5rem 8rem;
   }
 
-  .textContent {
-    max-width: 600px;
-    margin-left: 3rem;
+  .textSection {
+    max-width: 500px;
+    align-items: flex-start;
   }
-
-    h2 {
-      width: 80%;
-    }
-
-    .buttons {
-      justify-content: flex-start;
-    }
-
-    .imageWrapper img {
-  width: 100%;
-  max-width: auto;
   
+  .textSection h2 {
+    font-size: var(--h2-size);
+    font-weight: 700;
+    text-align: start;
+  }
+  
+  .textSection p {
+    font-size: var(--p-size);
+    text-align: start;
+    margin-left: 0;
+  }
+
+  .buttons {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .imageWrapper {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .imageWrapper img {
+  width: 100%;
+  max-width: 600px;
 }
 
 .backgroundShape {
   top: 30%;
+  left: 85%;
   width: 100%;
-  min-height: 100px;
-  max-height: 320px;
+  height: 35vh;
+  max-height: 400px;
 }
-
 
 
 }
