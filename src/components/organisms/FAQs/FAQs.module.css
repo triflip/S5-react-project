@@ -16,11 +16,15 @@
 }
 
 .faqList details {
-  border-top: 1px solid hsl(229, 8%, 60%);
+  border-top: 1px solid var(--color-tab);
   padding: 1rem 0;
 }
 
 .faqList details:first-child {
   border-top: none; 
+}
+
+.faqList details:last-child {
+  border-bottom: 1px solid var(--color-tab);
 }
 

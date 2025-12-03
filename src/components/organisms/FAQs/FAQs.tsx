@@ -6,7 +6,7 @@ export default function FAQSection() {
   return (
     <section id="faqs" className={styles.section}>
       <article className={styles.textBlock}>
-        <h2>Frequently Asked Questions</h2>
+        <h3>Frequently Asked Questions</h3>
         <p>
           Here are some of our FAQs. If you have any other questions you'd like answered,
           please feel free to email us.
