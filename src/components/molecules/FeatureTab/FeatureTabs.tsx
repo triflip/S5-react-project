@@ -19,8 +19,9 @@ export default function FeatureTab({ image, title, text }: FeatureTabProps) {
       
 
       <article className={styles.textContent}>
-        <h2>{title}</h2>
+        <h3>{title}</h3>
         <p>{text}</p>
+        <Button variant="blue">More info</Button>
 
       </article>
     </div>
