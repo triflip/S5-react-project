@@ -4,9 +4,9 @@ import CloseIcon from "../../atoms/CloseIcon/CloseIcon";
 import styles from "./MobileMenu.module.css";
 import Button from "../../atoms/Button/Button";
 import SocialIcon from "../../atoms/SocialIcon/SocialIcons";
-import footerLogo from "./../../../assets/img/logo-bookmark-footer.svg";
 import facebookIcon from "./../../../assets/img/icon-facebook.svg";
 import twitterIcon from "./../../../assets/img/icon-twitter.svg";
+import whiteLogo from "../../../assets/img/logo-bookmark-all-white.svg"
 
 
 interface MobileMenuProps {
@@ -19,7 +19,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ onClose }) => {
   <div className={styles.header}>
     <div className={styles.headerTop}>
       <div className={styles.logo}>
-        <img src={footerLogo} alt="Bookmark logo" />
+        <img src={whiteLogo} alt="Bookmark logo" />
       </div>
 
       <button 

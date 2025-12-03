@@ -46,7 +46,8 @@ export default function Subscribe() {
             )}
           </div>
 
-          <Button>Contact Us</Button>
+          <Button className={styles.submitButton}>Contact Us</Button>
+
         </form>
       </div>
     </section>

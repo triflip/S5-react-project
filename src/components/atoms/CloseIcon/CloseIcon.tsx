@@ -9,7 +9,7 @@ interface CloseIconProps {
 const CloseIcon: React.FC<CloseIconProps> = ({ onClick, size = 24 }) => {
     return (
         <button 
-            className={styles.button}
+            className={styles.closeIcon}
             onClick={onClick}
             aria-label="Close menu"
         >

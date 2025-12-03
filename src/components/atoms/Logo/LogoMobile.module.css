@@ -1,6 +1,6 @@
 .logo {
-    width: 80%; /* Ocupa fins a un 80% de l'ample del seu contenidor */
-    max-width: 200px; /* Però mai es fa més ample de 200px */
-    min-width: 100px; /* I mai es fa més estret de 100px (opcional) */
+    width: 80%; 
+    max-width: 200px; 
+    min-width: 100px; 
     height: auto;
 }
