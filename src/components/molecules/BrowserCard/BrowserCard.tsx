@@ -10,7 +10,7 @@ interface BrowserCardProps {
   version: string;
 }
 
-export default function BrowserCard({ logo, title, version }: BrowserCardProps) {
+export default function BrowserCard({ logo, title, version, }: BrowserCardProps) {
   return (
     <article className={styles.card}>
       <BrowserLogo src={logo} alt={`${title} logo`} />

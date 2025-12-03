@@ -18,16 +18,19 @@ export default function ExtensionSection() {
       </article>
 
       <div className={styles.cards}>
+    
         <BrowserCard
           logo={ChromeLogo}
           title="Add to Chrome"
           version="62"
         />
+
         <BrowserCard
           logo={FirefoxLogo}
           title="Add to Firefox"
           version="55"
         />
+
         <BrowserCard
           logo={OperaLogo}
           title="Add to Opera"
