@@ -1,6 +1,5 @@
 import { render, screen, fireEvent,  } from "@testing-library/react";
 import Subscribe from "./Subscribe";
-import '@testing-library/jest-dom/vitest';
 
 // src/setupTests.ts
 import '@testing-library/jest-dom/vitest';

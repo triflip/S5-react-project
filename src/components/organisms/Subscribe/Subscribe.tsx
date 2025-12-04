@@ -15,7 +15,6 @@ export default function Subscribe() {
       setHasError(true);
     } else {
       setHasError(false);
-      console.log("Email enviat:", email);
     }
   };
 
